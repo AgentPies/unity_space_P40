@@ -12,16 +12,17 @@ public class WFC : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     //DODAĆ: Przypadki w rogach
+    //DODAĆ: Usuwanie pokoi gdy się nie stykają z niczym (dodać bool czy jest połączony z czymś a jak ma false to usunąć na końcu)
     {        
-        int x = 0;
+        float x = 0;
         GameObject[] instantiatedRooms = new GameObject[width * height];
         
         int currentRoom = 0;
-        int roomsInColumn  = height / 20;
-        int roomsInRow = width / 20;
+        int roomsInColumn  = Mathf.CeilToInt(height / 19.5f);
+        int roomsInRow = Mathf.CeilToInt(width / 20);
         while (x < width)
         {
-            int z = 0;
+            float z = 0;
             while (z < height)
             {   
                 int breakCounter = 0;
@@ -111,7 +112,7 @@ public class WFC : MonoBehaviour
                 }
                 z = z + 20;
             }
-            x = x + 20;
+            x = x + 19.5f;
         }
     }       
 }
