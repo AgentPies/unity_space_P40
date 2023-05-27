@@ -18,8 +18,8 @@ public class WFC : MonoBehaviour
         GameObject[] instantiatedRooms = new GameObject[width * height];
         
         int currentRoom = 0;
-        int roomsInColumn  = Mathf.CeilToInt(height / 19.5f);
-        int roomsInRow = Mathf.CeilToInt(width / 20);
+        int roomsInColumn  = Mathf.CeilToInt(height / 39);
+        int roomsInRow = Mathf.CeilToInt(width / 40);
         while (x < width)
         {
             float z = 0;
@@ -110,9 +110,9 @@ public class WFC : MonoBehaviour
                          }
                     }
                 }
-                z = z + 20;
+                z = z + 40;
             }
-            x = x + 19.5f;
+            x = x + 39;
         }
     }       
 }

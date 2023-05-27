@@ -1806,6 +1806,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Platform_Large_11 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1478700975778324, guid: 947441de82a48ae4e8d693f272edde94, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4555110006396732, guid: 947441de82a48ae4e8d693f272edde94, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1876,6 +1880,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6723747497832437364}
     m_Modifications:
+    - target: {fileID: 88692911904699426, guid: 33e93f93abce5324ea2cf93b675f54c1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 89065807371274812, guid: 33e93f93abce5324ea2cf93b675f54c1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2746915689509378421, guid: 33e93f93abce5324ea2cf93b675f54c1, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2024,6 +2036,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6723747497832437364}
     m_Modifications:
+    - target: {fileID: 88692911904699426, guid: 33e93f93abce5324ea2cf93b675f54c1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 89065807371274812, guid: 33e93f93abce5324ea2cf93b675f54c1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2746915689509378421, guid: 33e93f93abce5324ea2cf93b675f54c1, type: 3}
       propertyPath: m_RootOrder
       value: 2
