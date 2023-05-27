@@ -1,9 +1,11 @@
 using UnityEngine;
 
-public class Aiming : MonoBehaviour
+public class Aiming: MonoBehaviour
 {
-    private Camera mainCamera;
 
+    [SerializeField] private LayerMask groundMask;
+
+    private Camera mainCamera;
 
     private void Start()
     {
@@ -37,7 +39,7 @@ public class Aiming : MonoBehaviour
     {
         var ray = mainCamera.ScreenPointToRay(Input.mousePosition);
 
-        if (Physics.Raycast(ray, out var hitInfo, Mathf.Infinity))
+        if (Physics.Raycast(ray, out var hitInfo, Mathf.Infinity, groundMask))
         {
             // The Raycast hit something, return with the position.
             return (success: true, position: hitInfo.point);
