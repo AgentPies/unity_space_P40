@@ -2086,6 +2086,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Platform_Large_11
       objectReference: {fileID: 0}
+    - target: {fileID: 1478700975778324, guid: 947441de82a48ae4e8d693f272edde94, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4555110006396732, guid: 947441de82a48ae4e8d693f272edde94, type: 3}
       propertyPath: m_RootOrder
       value: 0
