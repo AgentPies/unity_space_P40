@@ -1187,6 +1187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7581286810922993956}
   - component: {fileID: 8545146341954888936}
+  - component: {fileID: 4878651839944913880}
   m_Layer: 0
   m_Name: Room RL scale
   m_TagString: Untagged
@@ -1231,6 +1232,19 @@ MonoBehaviour:
   bottom: 0
   left: 1
   right: 1
+--- !u!65 &4878651839944913880
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6207488936019483147}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 17.899801, y: 19.046482, z: 17.920458}
+  m_Center: {x: -9.907466, y: 2.9231145, z: 9.890923}
 --- !u!1 &7055422081429188127
 GameObject:
   m_ObjectHideFlags: 0

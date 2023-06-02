@@ -1376,6 +1376,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1724198058869008582}
   - component: {fileID: 3500867750490939616}
+  - component: {fileID: 1248918729742550695}
   m_Layer: 0
   m_Name: Room TD scale
   m_TagString: Untagged
@@ -1421,6 +1422,19 @@ MonoBehaviour:
   bottom: 1
   left: 0
   right: 0
+--- !u!65 &1248918729742550695
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6956618283965761382}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 17.773314, y: 13.786995, z: 17.691164}
+  m_Center: {x: -10.193204, y: 2.7566445, z: 9.761296}
 --- !u!1 &7014531182524720386
 GameObject:
   m_ObjectHideFlags: 0
