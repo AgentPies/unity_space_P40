@@ -30,8 +30,7 @@ public class MeleeEnemyAI : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
         }
 
-        Debug.Log("Distance: " + Vector3.Distance(transform.position, target.position));
-        Debug.Log("In Room: " + isInRoom);
+        
 
     }
 
