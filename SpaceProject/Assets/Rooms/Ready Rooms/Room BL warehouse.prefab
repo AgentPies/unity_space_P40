@@ -508,15 +508,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2705509454343192071, guid: b04c2ddec7e275d4b83883ee00be5631, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -70.488785
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2705509454343192071, guid: b04c2ddec7e275d4b83883ee00be5631, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0000038146973
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2705509454343192071, guid: b04c2ddec7e275d4b83883ee00be5631, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.378023
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2705509454343192071, guid: b04c2ddec7e275d4b83883ee00be5631, type: 3}
       propertyPath: m_LocalRotation.w
@@ -548,7 +548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5423539525012416849, guid: b04c2ddec7e275d4b83883ee00be5631, type: 3}
       propertyPath: m_Name
-      value: Room BL scale
+      value: Room BL warehouse
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b04c2ddec7e275d4b83883ee00be5631, type: 3}

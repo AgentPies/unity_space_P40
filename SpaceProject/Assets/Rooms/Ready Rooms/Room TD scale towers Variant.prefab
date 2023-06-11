@@ -232,7 +232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1724198058869008582, guid: 0a01d490a1b00a442a31efe59a9ca89a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 119.38527
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1724198058869008582, guid: 0a01d490a1b00a442a31efe59a9ca89a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -240,7 +240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1724198058869008582, guid: 0a01d490a1b00a442a31efe59a9ca89a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.140911
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1724198058869008582, guid: 0a01d490a1b00a442a31efe59a9ca89a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -272,7 +272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6956618283965761382, guid: 0a01d490a1b00a442a31efe59a9ca89a, type: 3}
       propertyPath: m_Name
-      value: Room TD scale towers
+      value: Room TD scale towers Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a01d490a1b00a442a31efe59a9ca89a, type: 3}

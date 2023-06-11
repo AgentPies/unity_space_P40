@@ -29,9 +29,6 @@ public class MeleeEnemyAI : MonoBehaviour
             // Move towards the target
             transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
         }
-
-        
-
     }
 
     private void OnTriggerEnter(Collider other)

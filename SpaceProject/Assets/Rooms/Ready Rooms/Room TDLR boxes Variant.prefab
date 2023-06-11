@@ -86,7 +86,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6212408873798057286, guid: 849a0087892c8534fa5fce315034eed8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 126.14692
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6212408873798057286, guid: 849a0087892c8534fa5fce315034eed8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -94,7 +94,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6212408873798057286, guid: 849a0087892c8534fa5fce315034eed8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.1614609
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6212408873798057286, guid: 849a0087892c8534fa5fce315034eed8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -126,7 +126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6887984355487596118, guid: 849a0087892c8534fa5fce315034eed8, type: 3}
       propertyPath: m_Name
-      value: Room TDLR boxes
+      value: Room TDLR boxes Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 849a0087892c8534fa5fce315034eed8, type: 3}

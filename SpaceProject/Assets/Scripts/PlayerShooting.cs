@@ -14,6 +14,10 @@ public class PlayerShooting : MonoBehaviour
         {
             Shoot();
         }
+        else
+        {
+            this.GetComponent<Animator>().SetBool("IsShooting", false);
+        }
     }
 
     private void Shoot()
@@ -21,5 +25,6 @@ public class PlayerShooting : MonoBehaviour
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody bulletRB = bullet.GetComponent<Rigidbody>();
         bulletRB.velocity = firePoint.forward * bulletSpeed;
+        this.GetComponent<Animator>().SetBool("IsShooting", true);
     }
 }

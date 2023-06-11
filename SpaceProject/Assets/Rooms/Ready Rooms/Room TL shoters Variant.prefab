@@ -151,7 +151,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6966645614647610261, guid: 031eccf050081b749889c51217d3025f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 126.844246
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6966645614647610261, guid: 031eccf050081b749889c51217d3025f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -159,7 +159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6966645614647610261, guid: 031eccf050081b749889c51217d3025f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.4673004
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6966645614647610261, guid: 031eccf050081b749889c51217d3025f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -191,7 +191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8977423313395983720, guid: 031eccf050081b749889c51217d3025f, type: 3}
       propertyPath: m_Name
-      value: Room TL shoters
+      value: Room TL shoters Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 031eccf050081b749889c51217d3025f, type: 3}

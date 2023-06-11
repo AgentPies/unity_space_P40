@@ -22,7 +22,14 @@ public class PlayerMovement : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.z = Input.GetAxisRaw("Vertical");
-
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        {
+            this.GetComponent<Animator>().SetBool("IsRunning", true);
+        }
+        else
+        {
+            this.GetComponent<Animator>().SetBool("IsRunning", false);
+        }
         mousePos = Input.mousePosition;
         mousePos = cam.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, cam.transform.position.y));
     }

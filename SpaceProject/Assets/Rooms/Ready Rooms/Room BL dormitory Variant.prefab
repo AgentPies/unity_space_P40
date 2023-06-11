@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2705509454343192071, guid: b04c2ddec7e275d4b83883ee00be5631, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -161.12555
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2705509454343192071, guid: b04c2ddec7e275d4b83883ee00be5631, type: 3}
       propertyPath: m_LocalPosition.y
@@ -21,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2705509454343192071, guid: b04c2ddec7e275d4b83883ee00be5631, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -30.882872
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2705509454343192071, guid: b04c2ddec7e275d4b83883ee00be5631, type: 3}
       propertyPath: m_LocalRotation.w
@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5423539525012416849, guid: b04c2ddec7e275d4b83883ee00be5631, type: 3}
       propertyPath: m_Name
-      value: Room BL dormitory
+      value: Room BL dormitory Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b04c2ddec7e275d4b83883ee00be5631, type: 3}

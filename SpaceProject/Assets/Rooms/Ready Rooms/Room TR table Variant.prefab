@@ -228,7 +228,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5831390792081961679, guid: 1cf7877831d14134b9fa8ec4ce733761, type: 3}
       propertyPath: m_Name
-      value: Room TR table
+      value: Room TR table Variant
       objectReference: {fileID: 0}
     - target: {fileID: 9172938283469622295, guid: 1cf7877831d14134b9fa8ec4ce733761, type: 3}
       propertyPath: m_RootOrder
@@ -236,7 +236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9172938283469622295, guid: 1cf7877831d14134b9fa8ec4ce733761, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 132.91177
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9172938283469622295, guid: 1cf7877831d14134b9fa8ec4ce733761, type: 3}
       propertyPath: m_LocalPosition.y
@@ -244,7 +244,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9172938283469622295, guid: 1cf7877831d14134b9fa8ec4ce733761, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.511717
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9172938283469622295, guid: 1cf7877831d14134b9fa8ec4ce733761, type: 3}
       propertyPath: m_LocalRotation.w

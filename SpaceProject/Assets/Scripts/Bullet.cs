@@ -16,5 +16,10 @@ public class Bullet : MonoBehaviour
         Debug.Log("Bullet hit: " + collision.gameObject.name);
 
         Destroy(gameObject);
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<HealthSystem>().TakeDamage(20);
+        }
     }
 }

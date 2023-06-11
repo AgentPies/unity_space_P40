@@ -374,7 +374,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1763367670762829496, guid: 6cedb13162b67234688258c973cdff71, type: 3}
       propertyPath: m_Name
-      value: Room BR pales
+      value: Room BR pales Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8128782811384877804, guid: 6cedb13162b67234688258c973cdff71, type: 3}
       propertyPath: m_RootOrder
@@ -382,7 +382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8128782811384877804, guid: 6cedb13162b67234688258c973cdff71, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 81.134766
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8128782811384877804, guid: 6cedb13162b67234688258c973cdff71, type: 3}
       propertyPath: m_LocalPosition.y
@@ -390,7 +390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8128782811384877804, guid: 6cedb13162b67234688258c973cdff71, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8128782811384877804, guid: 6cedb13162b67234688258c973cdff71, type: 3}
       propertyPath: m_LocalRotation.w
