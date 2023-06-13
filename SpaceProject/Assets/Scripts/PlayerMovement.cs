@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public string currentRoom;
 
     private Rigidbody rb;
     private Camera cam;
@@ -42,5 +43,26 @@ public class PlayerMovement : MonoBehaviour
         lookDir.y = 0f; // Ensure the player doesn't tilt based on the mouse position
         Quaternion rotation = Quaternion.LookRotation(lookDir);
         rb.MoveRotation(rotation);
+    }
+
+    public string GetCurrentRoom()
+    {
+        return currentRoom;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Room"))
+        {
+            currentRoom = other.gameObject.name; // Assign the name of the entered room as the current room identifier
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Room"))
+        {
+            currentRoom = null; // Reset the current room identifier when exiting the room
+        }
     }
 }
