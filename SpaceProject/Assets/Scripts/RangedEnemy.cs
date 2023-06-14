@@ -5,6 +5,7 @@ using UnityEngine;
 public class RangedEnemy : MonoBehaviour
 {
     public float moveSpeed = 3f;
+    public float fireRate = 1f; // Number of bullets fired per second
     public float bulletSpeed = 10f;
     public GameObject bulletPrefab;
     public Transform firePoint;
@@ -13,6 +14,7 @@ public class RangedEnemy : MonoBehaviour
     private Rigidbody rb;
     private GameObject player;
     private bool isPlayerInRoom;
+    private float fireCooldown;
 
     private void Awake()
     {
@@ -23,13 +25,17 @@ public class RangedEnemy : MonoBehaviour
     private void FixedUpdate()
     {
         DetectPlayer();
-        if (isPlayerInRoom)
+
+        if (fireCooldown <= 0f && isPlayerInRoom)
         {
             Vector3 direction = player.transform.position - transform.position;
             Quaternion rotation = Quaternion.LookRotation(direction);
             rb.MoveRotation(rotation);
             Shoot();
+            fireCooldown = 1f / fireRate;
         }
+
+        fireCooldown -= Time.deltaTime;
     }
 
     private void Shoot()
@@ -41,7 +47,7 @@ public class RangedEnemy : MonoBehaviour
 
     private void DetectPlayer()
     {
-        if (player.GetComponent<PlayerMovement>().currentRoom == currentRoom)
+        if (player.GetComponent<PlayerMovement>().GetCurrentRoom() == currentRoom)
         {
             Vector3 direction = player.transform.position - transform.position;
             rb.MovePosition(rb.position + direction.normalized * moveSpeed * Time.fixedDeltaTime);

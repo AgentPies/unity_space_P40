@@ -4,69 +4,73 @@ using UnityEngine;
 
 public class Turret : MonoBehaviour
 {
-    public float detectionRange = 10f;
-    public Transform target;
-    public Collider roomCollider;
+    public float fireRate = 1f; // Number of bullets fired per second
+    public float bulletSpeed = 10f;
     public GameObject bulletPrefab;
     public Transform firePoint;
-    public float fireRate = 2f;
-    public float bulletSpeed = 10f;
+    public string currentRoom;
 
-    private bool isInRoom;
-    private float nextFireTime;
+    private Rigidbody rb;
+    private GameObject player;
+    private bool isPlayerInRoom;
+    private float fireCooldown;
 
-    private void Start()
+    private void Awake()
     {
-        target = GameObject.FindGameObjectWithTag("Player").transform;
-        isInRoom = false;
-        nextFireTime = Time.time; // Initialize the next fire time to the current time
+        rb = GetComponent<Rigidbody>();
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        // Check if the target is within detection range and in the same room
-        if (Vector3.Distance(transform.position, target.position) <= detectionRange && isInRoom)
+        DetectPlayer();
+
+        if (fireCooldown <= 0f && isPlayerInRoom)
         {
+            Vector3 direction = player.transform.position - transform.position;
+            Quaternion rotation = Quaternion.LookRotation(direction);
+            rb.MoveRotation(rotation);
+            Shoot();
+            fireCooldown = 1f / fireRate;
+        }
 
-            // Rotate to face the target
-            transform.LookAt(target);
+        fireCooldown -= Time.deltaTime;
+    }
 
-            // Fire bullets if the next fire time has been reached
-            if (Time.time >= nextFireTime)
-            {
-                FireBullet();
-                nextFireTime = Time.time + 1f / fireRate; // Update the next fire time
-            }
+    private void Shoot()
+    {
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
+        bulletRb.velocity = firePoint.forward * bulletSpeed;
+    }
+
+    private void DetectPlayer()
+    {
+        if (player.GetComponent<PlayerMovement>().GetCurrentRoom() == currentRoom)
+        {
+            Vector3 direction = player.transform.position - transform.position;
+            
+            isPlayerInRoom = true;
+        }
+        else
+        {
+            isPlayerInRoom = false;
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        // Check if the enemy enters a room
-        if (other == roomCollider)
+        if (other.CompareTag("Room"))
         {
-            isInRoom = true;
+            currentRoom = other.gameObject.name;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        // Check if the enemy exits a room
-        if (other == roomCollider)
+        if (other.CompareTag("Room"))
         {
-            isInRoom = false;
+            currentRoom = null;
         }
-    }
-
-    private void FireBullet()
-    {
-        // Instantiate a bullet at the fire point's position and rotation
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-
-        // Get the rigidbody component of the bullet
-        Rigidbody bulletRigidbody = bullet.GetComponent<Rigidbody>();
-
-        // Set the velocity of the bullet using bulletSpeed
-        bulletRigidbody.velocity = bullet.transform.forward * bulletSpeed;
     }
 }

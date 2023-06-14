@@ -1,51 +1,62 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class MeleeEnemyAI : MonoBehaviour
+public class MeleeEnemy : MonoBehaviour
 {
     public float moveSpeed = 3f;
-    public float detectionRange = 10f;
-    public Transform target;
-    public Collider roomCollider;
+    public string currentRoom;
 
-    private bool isInRoom;
+    private Rigidbody rb;
+    private GameObject player;
+    private bool isPlayerInRoom;
 
-    private void Start()
+    private void Awake()
     {
-        target = GameObject.FindGameObjectWithTag("Player").transform;
-        isInRoom = false;
+        rb = GetComponent<Rigidbody>();
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        // Check if the target is within detection range and in the same room
-        if (Vector3.Distance(transform.position, target.position) <= detectionRange && isInRoom)
-        {
-            // Move towards the target
-            transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
-        }
+        DetectPlayer();
 
-        if (Vector3.Distance(transform.position, target.position) <= detectionRange && isInRoom)
+        if (isPlayerInRoom)
         {
-            // Move towards the target
-            transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+            Vector3 direction = player.transform.position - transform.position;
+            Quaternion rotation = Quaternion.LookRotation(direction);
+            rb.MoveRotation(rotation);  
+        }
+    }
+
+
+    private void DetectPlayer()
+    {
+        if (player.GetComponent<PlayerMovement>().GetCurrentRoom() == currentRoom)
+        {
+            Vector3 direction = player.transform.position - transform.position;
+            rb.MovePosition(rb.position + direction.normalized * moveSpeed * Time.fixedDeltaTime);
+            isPlayerInRoom = true;
+        }
+        else
+        {
+            isPlayerInRoom = false;
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        // Check if the enemy enters a room
-        if (other == roomCollider)
+        if (other.CompareTag("Room"))
         {
-            isInRoom = true;
+            currentRoom = other.gameObject.name;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        // Check if the enemy exits a room
-        if (other == roomCollider)
+        if (other.CompareTag("Room"))
         {
-            isInRoom = false;
+            currentRoom = null;
         }
     }
 }

@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6179462116469706492}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.61764103, y: 1.327728, z: 1.4133726}
+  m_LocalPosition: {x: 0.014, y: 3.17, z: 3.56}
   m_LocalScale: {x: 1.392327, y: 1.392327, z: 1.392327}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -456,7 +456,7 @@ Transform:
   m_GameObject: {fileID: 8190407739017568925}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.0555723, y: -0.035294116, z: 2.719198}
-  m_LocalScale: {x: 0.9527427, y: 0.9527427, z: 0.9527427}
+  m_LocalScale: {x: 0.9527427, y: 1.5992738, z: 0.9527427}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8196024794758944035}
@@ -556,13 +556,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dfca929302d9a4418585735cec76ace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRange: 100
-  target: {fileID: 0}
-  roomCollider: {fileID: 0}
-  bulletPrefab: {fileID: 4689329602990431647, guid: 7b89b579b80018b40bd07923f11678dc, type: 3}
-  firePoint: {fileID: 5786592863121172893}
   fireRate: 2
   bulletSpeed: 10
+  bulletPrefab: {fileID: 4689329602990431647, guid: 7b89b579b80018b40bd07923f11678dc, type: 3}
+  firePoint: {fileID: 5786592863121172893}
+  currentRoom: 
 --- !u!1 &8190478839031156865
 GameObject:
   m_ObjectHideFlags: 0

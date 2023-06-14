@@ -456,7 +456,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f7e38320ce24c8489c09fbb9742594a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 6
+  currentRoom: 
 --- !u!114 &5058312845296416899
 MonoBehaviour:
   m_ObjectHideFlags: 0

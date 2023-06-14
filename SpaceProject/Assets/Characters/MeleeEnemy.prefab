@@ -1137,10 +1137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3fbbdd68fc368c408916b91818232c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
-  detectionRange: 500
-  target: {fileID: 0}
-  roomCollider: {fileID: 0}
+  moveSpeed: 5
+  currentRoom: 
 --- !u!1 &53096790659352562
 GameObject:
   m_ObjectHideFlags: 0
