@@ -1037,6 +1037,7 @@ GameObject:
   - component: {fileID: 52328976529593021}
   - component: {fileID: 52328976529593017}
   - component: {fileID: 52328976529593020}
+  - component: {fileID: 8060796551236633918}
   m_Layer: 8
   m_Name: MeleeEnemy
   m_TagString: Enemy
@@ -1141,6 +1142,20 @@ MonoBehaviour:
   detectionRange: 500
   target: {fileID: 0}
   roomCollider: {fileID: 0}
+--- !u!114 &8060796551236633918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53057004222373560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8353cae95bff4e4486174adf0fc8873, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 0
 --- !u!1 &53096790659352562
 GameObject:
   m_ObjectHideFlags: 0

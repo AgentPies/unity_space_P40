@@ -653,6 +653,7 @@ GameObject:
   - component: {fileID: 80474313948950501}
   - component: {fileID: 776624503652009726}
   - component: {fileID: 80474313948950502}
+  - component: {fileID: 363564476480719361}
   m_Layer: 0
   m_Name: RangedEnemy
   m_TagString: Untagged
@@ -756,12 +757,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   detectionRange: 100
-  target: {fileID: 0}
-  roomCollider: {fileID: 0}
+  player: {fileID: 0}
   bulletPrefab: {fileID: 4689329602990431647, guid: 7b89b579b80018b40bd07923f11678dc, type: 3}
   firePoint: {fileID: 1720502948158086597}
   fireRate: 2
   bulletSpeed: 10
+--- !u!114 &363564476480719361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7656601968002933845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8353cae95bff4e4486174adf0fc8873, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 0
 --- !u!1 &7656605336695756647
 GameObject:
   m_ObjectHideFlags: 0

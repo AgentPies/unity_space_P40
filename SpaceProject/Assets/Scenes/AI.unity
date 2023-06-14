@@ -773,11 +773,16 @@ PrefabInstance:
       propertyPath: roomCollider
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 52389528864654326, guid: 83a23eb9e118ea642b3d1b68af45c646, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 53057004222373560, guid: 83a23eb9e118ea642b3d1b68af45c646, type: 3}
       propertyPath: m_Name
       value: MeleeEnemy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7604688335473232834, guid: 83a23eb9e118ea642b3d1b68af45c646, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 83a23eb9e118ea642b3d1b68af45c646, type: 3}
 --- !u!1 &1581973732
 GameObject:
@@ -1047,6 +1052,14 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1930934018}
+    - target: {fileID: 80474313948950502, guid: 92a2217903204c743824b3d562a33f52, type: 3}
+      propertyPath: fireRate
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 80474313948950502, guid: 92a2217903204c743824b3d562a33f52, type: 3}
+      propertyPath: bulletSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 80474313948950502, guid: 92a2217903204c743824b3d562a33f52, type: 3}
       propertyPath: roomCollider
       value: 
@@ -1403,6 +1416,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7716226788475026915, guid: 92a2217903204c743824b3d562a33f52, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 15c8fbcceddb6404fa736af1f0d6b53d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92a2217903204c743824b3d562a33f52, type: 3}
 --- !u!1 &2039867613
@@ -1530,7 +1547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7001081849504908033, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 18.2
+      value: -23.98
       objectReference: {fileID: 0}
     - target: {fileID: 7001081849504908033, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
       propertyPath: m_LocalRotation.w

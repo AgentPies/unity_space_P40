@@ -447,7 +447,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6207488936019483147, guid: 7d5f043bd7f9c864db241b9a7f5ab273, type: 3}
       propertyPath: m_Name
-      value: Room RL wall pipes
+      value: Room RL wall ornaments Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7581286810922993956, guid: 7d5f043bd7f9c864db241b9a7f5ab273, type: 3}
       propertyPath: m_RootOrder
@@ -500,3 +500,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7581286810922993956, guid: 7d5f043bd7f9c864db241b9a7f5ab273, type: 3}
   m_PrefabInstance: {fileID: 9144388845460805175}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2936922520364223548 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6207488936019483147, guid: 7d5f043bd7f9c864db241b9a7f5ab273, type: 3}
+  m_PrefabInstance: {fileID: 9144388845460805175}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-5151008421305655916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2936922520364223548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f779432e3d38e34cb38f8f424ea96a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

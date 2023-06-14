@@ -29,6 +29,7 @@ public class RangedEnemy : MonoBehaviour
         {
             // Move towards the player
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
+            this.GetComponent<Animator>().SetBool("IsRunning", true);
 
             // Rotate to face the player
             transform.LookAt(player.transform);
@@ -36,6 +37,7 @@ public class RangedEnemy : MonoBehaviour
             // Fire bullets if the next fire time has been reached
             if (Time.time >= nextFireTime)
             {
+                this.GetComponent<Animator>().SetBool("IsShooting", true);
                 FireBullet();
                 nextFireTime = Time.time + 1f / fireRate;
             }
