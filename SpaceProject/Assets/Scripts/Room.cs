@@ -33,4 +33,16 @@ public class Room : MonoBehaviour
         }
         return false;
     }
+
+    public bool ContainsEnemy()
+    {
+        foreach (Transform child in transform)
+        {
+            if (child.CompareTag("Enemy"))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 }

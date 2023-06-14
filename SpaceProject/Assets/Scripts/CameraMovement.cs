@@ -7,6 +7,7 @@ public class CameraMovement : MonoBehaviour
 {
     [SerializeField] public Transform target;
     [SerializeField] public Vector3 offset;
+
     [SerializeField] public float smoothSpeed = 0.125f;
 
     private void LateUpdate()

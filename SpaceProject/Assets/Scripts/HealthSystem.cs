@@ -18,8 +18,24 @@ public class HealthSystem : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-
-        healthBar.SetHealth(currentHealth);
+        if (currentHealth <= 0)
+        {
+            GetComponent<Animator>().SetBool("IsDead", true);   
+        }
     }
+
+    public void Heal(int heal)
+    {
+        Debug.Log("Heal");
+        if (currentHealth + heal > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        else
+        {
+            currentHealth += heal;
+        }
+    }
+
 
 }
