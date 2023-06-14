@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1720502948158086597}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BulletPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7662837370908026093}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ball_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658527027241892969}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Finger_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7658890354527262687}
   - component: {fileID: 7759286202665092725}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chr_ScifiWorlds_Female_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -239,7 +239,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7662379469757304441}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spine_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,7 +271,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7662732858396890765}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: UpperLeg_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -303,7 +303,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7662602230932100299}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Finger_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658842360002786417}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shoulder_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 7658896197867199435}
   - component: {fileID: 7656086938470417797}
   - component: {fileID: 7643563051971222699}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chr_Attach_Pouch_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -450,7 +450,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658644957566589895}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clavicle_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -484,7 +484,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7658400822204308789}
   - component: {fileID: 7759279810896327245}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chr_ScifiWorlds_Soldier_Female_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -618,7 +618,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658822468745256871}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Jaw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -653,9 +653,9 @@ GameObject:
   - component: {fileID: 80474313948950501}
   - component: {fileID: 776624503652009726}
   - component: {fileID: 80474313948950502}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RangedEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -669,7 +669,7 @@ Transform:
   m_GameObject: {fileID: 7656601968002933845}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -51.83342, y: 0, z: 35.501034}
-  m_LocalScale: {x: 2.9867468, y: 2.9867468, z: 2.9867468}
+  m_LocalScale: {x: 2.9867465, y: 2.9867465, z: 2.9867465}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7658873165676563431}
@@ -755,13 +755,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
-  detectionRange: 100
-  target: {fileID: 0}
-  roomCollider: {fileID: 0}
+  bulletSpeed: 15
   bulletPrefab: {fileID: 4689329602990431647, guid: 7b89b579b80018b40bd07923f11678dc, type: 3}
   firePoint: {fileID: 1720502948158086597}
-  fireRate: 2
-  bulletSpeed: 10
+  currentRoom: 
 --- !u!1 &7656605336695756647
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,7 +768,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658405181684565379}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -803,7 +800,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7658602264361981909}
   - component: {fileID: 7759430214725651265}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chr_ScifiWorlds_Scavenger_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -937,7 +934,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658701534516216415}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: IndexFinger_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -969,7 +966,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658820096539456951}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hand_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1003,7 +1000,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658469310626994261}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clavicle_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1038,7 +1035,7 @@ GameObject:
   - component: {fileID: 7658929349211983435}
   - component: {fileID: 7652188178992172713}
   - component: {fileID: 7643497674668457151}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chr_Attach_Pouch_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1120,7 +1117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7658716327889591101}
   - component: {fileID: 7758909091267585397}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chr_ScifiWorlds_SpaceSuit_Male_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1254,7 +1251,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7662639980709811263}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: UpperLeg_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1286,7 +1283,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7662692547050271381}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Eyebrows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1318,7 +1315,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7658485571777690171}
   - component: {fileID: 7755628864975586705}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chr_ScifiWorlds_Soldier_Male_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1452,7 +1449,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658436955220300979}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Toes_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1483,7 +1480,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7662562993471959279}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: IndexFinger_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1515,7 +1512,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658634983878673885}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Elbow_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1548,7 +1545,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7658745048802695309}
   - component: {fileID: 7758977992347082597}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chr_ScifiWorlds_SpaceSuit_Female_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1684,7 +1681,7 @@ GameObject:
   - component: {fileID: 7662863243323730947}
   - component: {fileID: 7652383103813829721}
   - component: {fileID: 7644445800428685993}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chr_Attach_Shoulder_Small_R_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1765,7 +1762,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658913604848563955}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Thumb_03 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1796,7 +1793,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658748326503612607}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: IndexFinger_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1828,7 +1825,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7658928664240940029}
   - component: {fileID: 7759673585429881353}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chr_ScifiWorlds_SpaceSuit_Alien_Female_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1962,7 +1959,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7662348270442377153}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1998,7 +1995,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658832330113608977}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Thumb_02 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2031,7 +2028,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7662848033825819027}
   - component: {fileID: 7755361705409103299}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chr_ScifiWorlds_Male_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2165,7 +2162,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658900443012489439}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: IndexFinger_01 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2197,7 +2194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658607789768316369}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Finger_04 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2228,7 +2225,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658719279853175593}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Finger_03 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2260,7 +2257,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658383718095465587}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shoulder_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2293,7 +2290,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7658808419075466537}
   - component: {fileID: 7759641611377949397}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chr_ScifiWorlds_SpaceSuit_Female_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2427,7 +2424,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658626873853499561}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spine_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2460,7 +2457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7662563529677634445}
   - component: {fileID: 7755451324793683121}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chr_ScifiWorlds_SpaceSuit_Male_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2594,7 +2591,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658603513778824813}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Elbow_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2627,7 +2624,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7662382290943091343}
   - component: {fileID: 7758962158228177969}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chr_ScifiWorlds_Scavenger_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2762,7 +2759,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7662383533402651751}
   - component: {fileID: 7759648216877024305}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chr_ScifiWorlds_Strider_Male_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2896,7 +2893,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658497496411063605}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hand_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2930,7 +2927,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7662829264449962205}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Toes_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2961,7 +2958,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658540707602860445}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ankle_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2993,7 +2990,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7662592548202910507}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Finger_01 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3025,7 +3022,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7662578568827966291}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: IndexFinger_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3057,7 +3054,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7662376335020093203}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ankle_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3090,7 +3087,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7658373876799799905}
   - component: {fileID: 7759568512528312453}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chr_ScifiWorlds_Scavenger_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3226,7 +3223,7 @@ GameObject:
   - component: {fileID: 7662730144822126495}
   - component: {fileID: 7652220246006523579}
   - component: {fileID: 7644253880739995439}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chr_Attach_Helmet_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3307,7 +3304,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7662741436648850967}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ball_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3339,7 +3336,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658539420138414273}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Thumb_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3371,7 +3368,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658602989054092141}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3403,7 +3400,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7662638484116330077}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LowerLeg_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3437,7 +3434,7 @@ GameObject:
   - component: {fileID: 7662539692646000197}
   - component: {fileID: 7652151652776209847}
   - component: {fileID: 7644010595221978487}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chr_Attach_Hair_Male_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3518,7 +3515,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658873165676563431}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3551,7 +3548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7662698844409302387}
   - component: {fileID: 7759317182093612383}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chr_ScifiWorlds_Soldier_Male_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3685,7 +3682,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7662653125654799095}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: IndexFinger_02 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3717,7 +3714,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7662795565138715627}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spine_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3751,7 +3748,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658799721137177755}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Thumb_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3783,7 +3780,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7662829507754572331}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Thumb_01 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3815,7 +3812,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658661338144250107}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: IndexFinger_04 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3846,7 +3843,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7662610766881824177}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3882,7 +3879,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658675718037829711}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Finger_02 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3914,7 +3911,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658426453700906911}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Finger_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3946,7 +3943,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7662781869374171629}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Thumb_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3979,7 +3976,7 @@ GameObject:
   - component: {fileID: 7658489567043015125}
   - component: {fileID: 7656115341956674791}
   - component: {fileID: 7643545325311689207}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chr_Attach_Shoulder_Small_L_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4061,7 +4058,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7662846310865580613}
   - component: {fileID: 7755665573660564517}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Chr_ScifiWorlds_SpaceSuit_Alien_Male_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4195,7 +4192,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7662350227348579411}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LowerLeg_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4227,7 +4224,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7658412485322661785}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: IndexFinger_03 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4259,7 +4256,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7662331822697302633}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Finger_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}

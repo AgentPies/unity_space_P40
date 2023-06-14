@@ -5,40 +5,51 @@ using UnityEngine;
 public class RangedEnemy : MonoBehaviour
 {
     public float moveSpeed = 3f;
-    public float detectionRange = 10f;
-    public GameObject player;
+    public float bulletSpeed = 10f;
     public GameObject bulletPrefab;
     public Transform firePoint;
-    public float fireRate = 2f;
-    public float bulletSpeed = 10f;
+    public string currentRoom;
 
-    private Room currentRoom;
-    private bool isChasingPlayer;
-    private float nextFireTime;
+    private Rigidbody rb;
+    private GameObject player;
+    private bool isPlayerInRoom;
 
-    private void Start()
+    private void Awake()
     {
+        rb = GetComponent<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("Player");
-        isChasingPlayer = false;
-        nextFireTime = Time.time;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        if (isChasingPlayer)
+        DetectPlayer();
+        if (isPlayerInRoom)
         {
-            // Move towards the player
-            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
+            Vector3 direction = player.transform.position - transform.position;
+            Quaternion rotation = Quaternion.LookRotation(direction);
+            rb.MoveRotation(rotation);
+            Shoot();
+        }
+    }
 
-            // Rotate to face the player
-            transform.LookAt(player.transform);
+    private void Shoot()
+    {
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
+        bulletRb.velocity = firePoint.forward * bulletSpeed;
+    }
 
-            // Fire bullets if the next fire time has been reached
-            if (Time.time >= nextFireTime)
-            {
-                FireBullet();
-                nextFireTime = Time.time + 1f / fireRate;
-            }
+    private void DetectPlayer()
+    {
+        if (player.GetComponent<PlayerMovement>().currentRoom == currentRoom)
+        {
+            Vector3 direction = player.transform.position - transform.position;
+            rb.MovePosition(rb.position + direction.normalized * moveSpeed * Time.fixedDeltaTime);
+            isPlayerInRoom = true;
+        }
+        else
+        {
+            isPlayerInRoom = false;
         }
     }
 
@@ -46,12 +57,7 @@ public class RangedEnemy : MonoBehaviour
     {
         if (other.CompareTag("Room"))
         {
-            Room enteredRoom = other.GetComponent<Room>();
-            if (enteredRoom != null)
-            {
-                currentRoom = enteredRoom;
-                isChasingPlayer = currentRoom.ContainsPlayer();
-            }
+            currentRoom = other.gameObject.name;
         }
     }
 
@@ -59,19 +65,7 @@ public class RangedEnemy : MonoBehaviour
     {
         if (other.CompareTag("Room"))
         {
-            Room exitedRoom = other.GetComponent<Room>();
-            if (exitedRoom == currentRoom)
-            {
-                currentRoom = null;
-                isChasingPlayer = false;
-            }
+            currentRoom = null;
         }
-    }
-
-    private void FireBullet()
-    {
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        Rigidbody bulletRigidbody = bullet.GetComponent<Rigidbody>();
-        bulletRigidbody.velocity = bullet.transform.forward * bulletSpeed;
     }
 }
