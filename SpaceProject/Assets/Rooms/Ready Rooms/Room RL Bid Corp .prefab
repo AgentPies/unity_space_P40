@@ -1675,7 +1675,7 @@ GameObject:
   - component: {fileID: 8587189258323320148}
   - component: {fileID: 5996086585696696337}
   - component: {fileID: 1149769402138010234}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 'Room RL Bid Corp '
   m_TagString: Room
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 651385333186989725}
   - component: {fileID: 1862693241897507826}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Point Light (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7053167820469836695}
   - component: {fileID: 5179727463992264495}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Point Light (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,7 +198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1072606839968168971}
   - component: {fileID: 1028761736412116065}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Point Light (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8649236617083891474}
   - component: {fileID: 4250192909629417536}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Point Light (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -386,7 +386,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4473938998123485072}
   - component: {fileID: 3655077143327841039}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Point Light (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -479,7 +479,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8744399154906276624}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -529,7 +529,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6333568282606565079}
   - component: {fileID: 6447117882613046294}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Point Light (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -623,7 +623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5631518728934358510}
   - component: {fileID: 7955713390571449445}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Point Light (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -785,7 +785,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6736509200344545020}
   - component: {fileID: 7656763624325987093}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Point Light (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -879,7 +879,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6379692283004547876}
   - component: {fileID: 9182724792432596572}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -973,7 +973,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5552797666920466173}
   - component: {fileID: 4497903295732097815}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Point Light (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1067,7 +1067,7 @@ GameObject:
   m_Component:
   - component: {fileID: 708028580042280702}
   - component: {fileID: 3700792420683387266}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Point Light (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1161,7 +1161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2442724631516840536}
   - component: {fileID: 5517868950370900649}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Point Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1255,7 +1255,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6504497320845463616}
   - component: {fileID: 7154352244589267329}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Point Light (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1349,7 +1349,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7647308379219651289}
   - component: {fileID: 4221972194605223231}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Point Light (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1443,7 +1443,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6415346020617628546}
   - component: {fileID: 4946879512466934641}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Point Light (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1537,7 +1537,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3473094206716987167}
   - component: {fileID: 6690178981966982738}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Point Light (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1631,7 +1631,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6033573160749849585}
   - component: {fileID: 3187606490823872493}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Point Light (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1725,7 +1725,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2919225642075483230}
   - component: {fileID: 6800641498861963582}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Point Light (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1820,6 +1820,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall R (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 65207803294693660, guid: 94e26dddfa0c6894ca9c205bdfd140f7, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5195406004230192374, guid: 94e26dddfa0c6894ca9c205bdfd140f7, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8828760419969693393, guid: 94e26dddfa0c6894ca9c205bdfd140f7, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1890,6 +1898,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2705509454343192071}
     m_Modifications:
+    - target: {fileID: 88692911904699426, guid: 33e93f93abce5324ea2cf93b675f54c1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 89065807371274812, guid: 33e93f93abce5324ea2cf93b675f54c1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 89621342762063679, guid: 33e93f93abce5324ea2cf93b675f54c1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2746915689509378421, guid: 33e93f93abce5324ea2cf93b675f54c1, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1950,6 +1970,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall L  (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4392135899549726913, guid: 33e93f93abce5324ea2cf93b675f54c1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4680654916397620579, guid: 33e93f93abce5324ea2cf93b675f54c1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5439450577723102436, guid: 33e93f93abce5324ea2cf93b675f54c1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33e93f93abce5324ea2cf93b675f54c1, type: 3}
 --- !u!4 &7112136878530651044 stripped
@@ -1964,6 +1996,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2705509454343192071}
     m_Modifications:
+    - target: {fileID: 88692911904699426, guid: 33e93f93abce5324ea2cf93b675f54c1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 89065807371274812, guid: 33e93f93abce5324ea2cf93b675f54c1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 89621342762063679, guid: 33e93f93abce5324ea2cf93b675f54c1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2746915689509378421, guid: 33e93f93abce5324ea2cf93b675f54c1, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2024,6 +2068,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall B (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4392135899549726913, guid: 33e93f93abce5324ea2cf93b675f54c1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4680654916397620579, guid: 33e93f93abce5324ea2cf93b675f54c1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5439450577723102436, guid: 33e93f93abce5324ea2cf93b675f54c1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33e93f93abce5324ea2cf93b675f54c1, type: 3}
 --- !u!4 &7805086331906652515 stripped
@@ -2041,6 +2097,14 @@ PrefabInstance:
     - target: {fileID: 65207803294693660, guid: 94e26dddfa0c6894ca9c205bdfd140f7, type: 3}
       propertyPath: m_Name
       value: Wall T (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 65207803294693660, guid: 94e26dddfa0c6894ca9c205bdfd140f7, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5195406004230192374, guid: 94e26dddfa0c6894ca9c205bdfd140f7, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8828760419969693393, guid: 94e26dddfa0c6894ca9c205bdfd140f7, type: 3}
       propertyPath: m_RootOrder
@@ -2118,7 +2182,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1478700975778324, guid: 947441de82a48ae4e8d693f272edde94, type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4555110006396732, guid: 947441de82a48ae4e8d693f272edde94, type: 3}
       propertyPath: m_RootOrder
