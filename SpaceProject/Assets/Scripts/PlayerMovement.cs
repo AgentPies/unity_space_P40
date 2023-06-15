@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public string currentRoom;
+    public GameObject currentRoom;
 
     private Rigidbody rb;
     private Camera cam;
@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
         rb.MoveRotation(rotation);
     }
 
-    public string GetCurrentRoom()
+    public GameObject GetCurrentRoom()
     {
         return currentRoom;
     }
@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.CompareTag("Room"))
         {
-            currentRoom = other.gameObject.name; // Assign the name of the entered room as the current room identifier
+            currentRoom = other.gameObject; // Assign the name of the entered room as the current room identifier
         }
     }
 

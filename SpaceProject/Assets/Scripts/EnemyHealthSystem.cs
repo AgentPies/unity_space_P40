@@ -25,16 +25,34 @@ public class EnemyHealthSystem : MonoBehaviour
         }
     }
 
-    IEnumerator EnemyDieCoroutine()
-    {
-        yield return new WaitForSeconds(5f);
-    }
+
     public void EnemyDie()
     { 
-        this.GetComponent<RangedEnemy>().enabled = false;
-        this.GetComponent<Animator>().SetBool("IsDead", true);
+        if (this.gameObject.name == "MeleeEnemy")
+        {
+            this.GetComponent<MeleeEnemy>().enabled = false;
+            this.GetComponent<Animator>().SetBool("isWalking", true);
+        }
+        else if (this.gameObject.name == "RangedEnemy")
+        {
+            this.GetComponent<RangedEnemy>().enabled = false;
+        }
+        else if (this.gameObject.name == "Turret")
+        {
+            this.GetComponent<Turret>().enabled = false;
+        }
+        if (this.gameObject.name != "Turret")
+        {
+            this.GetComponent<Animator>().Play("death");
+        }
         
-        EnemyDieCoroutine();
+        this.GetComponent<Collider>().enabled = false;
+        
+        Invoke("DestroyEnemy", 5f);
+    }
+
+    public void DestroyEnemy()
+    {
         Destroy(this.gameObject);
     }
 

@@ -19,11 +19,12 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
 
-            if (collision.gameObject.CompareTag("Player"))
+            
+        }
+        if (collision.gameObject.CompareTag("Player"))
             {
                 collision.gameObject.GetComponent<HealthSystem>().TakeDamage(20);
             }
-        }
         else if (collision.gameObject.CompareTag("Enemy"))
         {
             collision.gameObject.GetComponent<EnemyHealthSystem>().TakeDamage(10);

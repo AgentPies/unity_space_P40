@@ -22,10 +22,10 @@ public class WFC : MonoBehaviour
         float x = 0;
         int currentRow = 0;
         int currentColumn = 0;
-        while (x <= (roomsInRow) * 65)
+        while (x <= (roomsInRow) * 67)
         {
             float z = 0;
-            while (z <= (roomsInColumn) * 65)
+            while (z <= (roomsInColumn) * 67)
             {   
                 int breakCounter = 0;
                 while(true){
@@ -51,7 +51,7 @@ public class WFC : MonoBehaviour
                             currentRoom++;
                             break;
                         }
-                        else if (breakCounter > 20){
+                        else if (breakCounter > 30){
                             instantiatedRooms[currentRoom] = Instantiate(room, new Vector3(x, 0, z), Quaternion.identity * room.transform.localRotation, parent: canvas);
                             currentRoom++;
                             break;
@@ -66,7 +66,7 @@ public class WFC : MonoBehaviour
                             currentRoom++;
                             break;
                          }
-                         else if (breakCounter > 20){
+                         else if (breakCounter > 30){
                             instantiatedRooms[currentRoom] = Instantiate(room, new Vector3(x, 0, z), Quaternion.identity * room.transform.localRotation, parent: canvas);
                             currentRoom++;
                             break;
@@ -104,7 +104,7 @@ public class WFC : MonoBehaviour
                             currentRoom++;
                             break;
                          }
-                         else if (breakCounter > 20){
+                         else if (breakCounter > 30){
                             instantiatedRooms[currentRoom] = Instantiate(room, new Vector3(x, 0, z), Quaternion.identity * room.transform.localRotation, parent: canvas);
                             currentRoom++;
                             break;
@@ -131,7 +131,7 @@ public class WFC : MonoBehaviour
                             currentRoom++;
                             break;
                          }
-                         else if (breakCounter > 20){
+                         else if (breakCounter > 30){
                             instantiatedRooms[currentRoom] = Instantiate(room, new Vector3(x, 0, z), Quaternion.identity * room.transform.localRotation, parent: canvas);
                             currentRoom++;
                             break;
@@ -139,14 +139,14 @@ public class WFC : MonoBehaviour
                     }
                     // kolejne kolumny - kolejne rzędy
                     else{
-                        if ((instantiatedRooms[currentRoom - roomsInColumn].GetComponent<WFCoptions>().right == room.GetComponent<WFCoptions>().left)
-                        & (instantiatedRooms[currentRoom - 1].GetComponent<WFCoptions>().top == room.GetComponent<WFCoptions>().bottom))
+                        if ((room.GetComponent<WFCoptions>().left) & (room.GetComponent<WFCoptions>().right) &
+                        (room.GetComponent<WFCoptions>().bottom) & (room.GetComponent<WFCoptions>().top))
                         {
                             instantiatedRooms[currentRoom] = Instantiate(room, new Vector3(x, 0, z), Quaternion.identity * room.transform.localRotation, parent: canvas);   
                             currentRoom++;
                             break;
                         }
-                        else if (breakCounter > 20){
+                        else if (breakCounter > 30){
                             instantiatedRooms[currentRoom] = Instantiate(room, new Vector3(x, 0, z), Quaternion.identity * room.transform.localRotation, parent: canvas);
                             currentRoom++;
                             break;
@@ -154,10 +154,10 @@ public class WFC : MonoBehaviour
                     }
                 }
                 Debug.Log("room: " + currentRoom);
-                z = z + 65;
+                z = z + 67;
                 currentRow++;
             }
-            x = x + 65;
+            x = x + 67;
             currentRow = 0;
             currentColumn++;
         }

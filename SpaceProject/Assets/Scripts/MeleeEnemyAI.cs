@@ -5,7 +5,7 @@ using UnityEngine;
 public class MeleeEnemy : MonoBehaviour
 {
     public float moveSpeed = 3f;
-    public string currentRoom;
+    public GameObject currentRoom;
 
     private Rigidbody rb;
     private GameObject player;
@@ -48,7 +48,7 @@ public class MeleeEnemy : MonoBehaviour
     {
         if (other.CompareTag("Room"))
         {
-            currentRoom = other.gameObject.name;
+            currentRoom = other.gameObject;
         }
     }
 

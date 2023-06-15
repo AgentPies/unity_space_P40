@@ -20,12 +20,7 @@ public class MeleeEnemyAI : MonoBehaviour
         // Check if the target is within detection range and in the same room
         if (Vector3.Distance(transform.position, target.position) <= detectionRange && isInRoom)
         {
-            // Move towards the target
-            transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
-        }
-
-        if (Vector3.Distance(transform.position, target.position) <= detectionRange && isInRoom)
-        {
+            this.GetComponent<Animator>().SetBool("isWalking", true);
             // Move towards the target
             transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
         }

@@ -8,7 +8,7 @@ public class Turret : MonoBehaviour
     public float bulletSpeed = 10f;
     public GameObject bulletPrefab;
     public Transform firePoint;
-    public string currentRoom;
+    public GameObject currentRoom;
 
     private Rigidbody rb;
     private GameObject player;
@@ -62,7 +62,7 @@ public class Turret : MonoBehaviour
     {
         if (other.CompareTag("Room"))
         {
-            currentRoom = other.gameObject.name;
+            currentRoom = other.gameObject;
         }
     }
 

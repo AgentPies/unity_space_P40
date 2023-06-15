@@ -203,13 +203,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4242403752024680342, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243141372303399946, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243735601850274886, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 7001081849504908033, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7001081849504908033, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 39.2408
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7001081849504908033, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
       propertyPath: m_LocalPosition.y
@@ -250,6 +262,14 @@ PrefabInstance:
     - target: {fileID: 7006638355970146275, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
       propertyPath: m_Name
       value: Player (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275585614087343347, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372327639207764645, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
+      propertyPath: moveSpeed
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
@@ -691,6 +711,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1691567181 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7001081849504908033, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
+  m_PrefabInstance: {fileID: 88212104}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1895303924
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,6 +813,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a37f474ff72770141a15586b89218f93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1691567181}
   offset: {x: 0, y: 30, z: -5}
   smoothSpeed: 0.125

@@ -9,7 +9,7 @@ public class RangedEnemy : MonoBehaviour
     public float bulletSpeed = 10f;
     public GameObject bulletPrefab;
     public Transform firePoint;
-    public string currentRoom;
+    public GameObject currentRoom;
 
     private Rigidbody rb;
     private GameObject player;
@@ -22,24 +22,29 @@ public class RangedEnemy : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
+    private void Start()
+    {
+        this.GetComponent<Animator>().Play("IdleAim");
+    }
+
     private void FixedUpdate()
     {
         DetectPlayer();
-
-        if (fireCooldown <= 0f && isPlayerInRoom)
+        
+        if (fireCooldown <= 0f && isPlayerInRoom==true)
         {
+            this.GetComponent<Animator>().Play("RunShoot");
             Vector3 direction = player.transform.position - transform.position;
             Quaternion rotation = Quaternion.LookRotation(direction);
             rb.MoveRotation(rotation);
             Shoot();
             fireCooldown = 1f / fireRate;
         }
-
         fireCooldown -= Time.deltaTime;
     }
 
     private void Shoot()
-    {
+    {   
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
         bulletRb.velocity = firePoint.forward * bulletSpeed;
@@ -55,6 +60,7 @@ public class RangedEnemy : MonoBehaviour
         }
         else
         {
+            this.GetComponent<Animator>().Play("IdleAim");
             isPlayerInRoom = false;
         }
     }
@@ -63,7 +69,7 @@ public class RangedEnemy : MonoBehaviour
     {
         if (other.CompareTag("Room"))
         {
-            currentRoom = other.gameObject.name;
+            currentRoom = other.gameObject;
         }
     }
 

@@ -440,9 +440,10 @@ GameObject:
   - component: {fileID: 8164277204202033921}
   - component: {fileID: -4772486656467290179}
   - component: {fileID: 1900660877}
+  - component: {fileID: 3997975882836651386}
   m_Layer: 0
   m_Name: Turret
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -560,7 +561,21 @@ MonoBehaviour:
   bulletSpeed: 10
   bulletPrefab: {fileID: 4689329602990431647, guid: 7b89b579b80018b40bd07923f11678dc, type: 3}
   firePoint: {fileID: 5786592863121172893}
-  currentRoom: 
+  currentRoom: {fileID: 0}
+--- !u!114 &3997975882836651386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8190407739017568925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8353cae95bff4e4486174adf0fc8873, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 0
 --- !u!1 &8190478839031156865
 GameObject:
   m_ObjectHideFlags: 0
