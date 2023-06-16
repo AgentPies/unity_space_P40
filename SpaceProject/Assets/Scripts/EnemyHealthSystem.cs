@@ -50,6 +50,7 @@ public class EnemyHealthSystem : MonoBehaviour
         if (turret != true)
         {
             this.GetComponent<Animator>().Play("death");
+            ParticleSystem explosion = Instantiate(Resources.Load<ParticleSystem>("Explosion"), transform.position, Quaternion.identity);
         }
         
         this.GetComponent<Collider>().enabled = false;
