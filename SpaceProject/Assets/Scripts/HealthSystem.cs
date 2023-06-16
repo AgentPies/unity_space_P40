@@ -18,9 +18,14 @@ public class HealthSystem : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
         if (currentHealth <= 0)
         {
+            GetComponent<PlayerMovement>().enabled = false;
+            GetComponent<PlayerShooting>().enabled = false;
             GetComponent<Animator>().SetBool("IsDead", true);   
+            Invoke("DestroyEnemy", 3f);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
@@ -35,6 +40,7 @@ public class HealthSystem : MonoBehaviour
         {
             currentHealth += heal;
         }
+        healthBar.SetHealth(currentHealth);
     }
 
 

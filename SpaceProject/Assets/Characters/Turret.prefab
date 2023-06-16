@@ -574,6 +574,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8353cae95bff4e4486174adf0fc8873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ranged: 0
+  melee: 0
+  turret: 1
   maxHealth: 10
   currentHealth: 0
 --- !u!1 &8190478839031156865

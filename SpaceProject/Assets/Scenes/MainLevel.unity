@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.17285277, g: 0.21600923, b: 0.29796222, a: 1}
+  m_IndirectSpecularColor: {r: 0.17286868, g: 0.21603008, b: 0.2979867, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -217,11 +217,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7001081849504908033, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7001081849504908033, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7001081849504908033, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7001081849504908033, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.1
+      value: -6.51
       objectReference: {fileID: 0}
     - target: {fileID: 7001081849504908033, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
       propertyPath: m_LocalPosition.y
@@ -267,6 +275,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 7372327639030181296, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 559641783}
     - target: {fileID: 7372327639207764645, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
       propertyPath: moveSpeed
       value: 10
@@ -376,7 +388,7 @@ RectTransform:
   m_GameObject: {fileID: 559641781}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.8959425}
-  m_LocalScale: {x: 0.69946, y: 0.69946, z: 0.69946}
+  m_LocalScale: {x: 0.4892583, y: 0.4892583, z: 0.4892583}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 96661825}
@@ -386,7 +398,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -420, y: 230.27}
+  m_AnchoredPosition: {x: -273, y: 160}
   m_SizeDelta: {x: 432.61, y: 53.573}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &559641783
@@ -501,7 +513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -578,12 +590,12 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.7882353, g: 1, b: 0.9901433, a: 0.59607846}
+  m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -640,14 +652,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.7175038, y: -0.015959587, z: 0.054683175, w: 0.69422144}
-  m_LocalPosition: {x: 6.6, y: 6.3, z: 22.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.68209493, z: -0.73126364, w: 0}
+  m_LocalPosition: {x: -6.51, y: 30.22897, z: 24.107344}
+  m_LocalScale: {x: 5, y: 4.9933367, z: 3.626899}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 86.338, y: 118.152, z: 123.881}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 93.984985, y: 0, z: 0}
 --- !u!1 &838451789
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,5 +826,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1691567181}
-  offset: {x: 0, y: 30, z: -5}
+  offset: {x: 0, y: 40, z: -5}
   smoothSpeed: 0.125

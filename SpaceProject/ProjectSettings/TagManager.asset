@@ -8,6 +8,9 @@ TagManager:
   - Map
   - Room
   - Bullet
+  - Wall
+  - Door
+  - PlayerGun
   layers:
   - Default
   - TransparentFX

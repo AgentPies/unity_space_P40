@@ -1055,7 +1055,7 @@ Transform:
   m_GameObject: {fileID: 53057004222373560}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.208657, y: 0, z: 3.6722755}
-  m_LocalScale: {x: 3.1238377, y: 3.1238377, z: 3.1238377}
+  m_LocalScale: {x: 2.9867465, y: 2.9867465, z: 2.9867465}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 47644024464015146}
@@ -1142,7 +1142,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   detectionRange: 10
-  target: {fileID: 0}
   currentRoom: {fileID: 0}
   enemyCollider: {fileID: 8001869875145886548}
 --- !u!114 &-6551329823019580497
@@ -1157,6 +1156,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8353cae95bff4e4486174adf0fc8873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ranged: 0
+  melee: 1
+  turret: 0
   maxHealth: 10
   currentHealth: 0
 --- !u!1 &53096790659352562

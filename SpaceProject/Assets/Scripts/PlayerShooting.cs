@@ -23,6 +23,7 @@ public class PlayerShooting : MonoBehaviour
     private void Shoot()
     {
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        bullet.GetComponent<Bullet>().SetPlayerShooter(true);
         Rigidbody bulletRB = bullet.GetComponent<Rigidbody>();
         bulletRB.velocity = firePoint.forward * bulletSpeed;
         this.GetComponent<Animator>().SetBool("IsShooting", true);

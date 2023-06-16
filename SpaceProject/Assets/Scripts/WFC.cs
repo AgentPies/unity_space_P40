@@ -58,7 +58,7 @@ public class WFC : MonoBehaviour
                         }
                     }
                     // pierwszy wiersz
-                    else if (currentRoom == roomsInColumn * currentRow){
+                    else if (currentRow == 0){
                          if ((instantiatedRooms[currentRoom - roomsInColumn].GetComponent<WFCoptions>().right == room.GetComponent<WFCoptions>().left)
                          & (room.GetComponent<WFCoptions>().bottom == false))
                          {
