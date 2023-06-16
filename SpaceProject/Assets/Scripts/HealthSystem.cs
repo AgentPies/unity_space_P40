@@ -25,7 +25,7 @@ public class HealthSystem : MonoBehaviour
             GetComponent<PlayerShooting>().enabled = false;
             GetComponent<Animator>().SetBool("IsDead", true);   
             Invoke("DestroyEnemy", 3f);
-            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
+            UnityEngine.SceneManagement.SceneManager.LoadScene("StartMenu");
         }
     }
 

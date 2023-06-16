@@ -30,6 +30,11 @@ public class MeleeEnemy : MonoBehaviour
             Quaternion rotation = Quaternion.LookRotation(direction, Vector3.up);
             rb.MoveRotation(rotation);
             rb.MovePosition(rb.position + direction.normalized * moveSpeed * Time.fixedDeltaTime);
+            this.GetComponent<Animator>().SetBool("isWalking", true);
+        }
+        else
+        {
+            this.GetComponent<Animator>().SetBool("isWalking", false);
         }
     }
 
@@ -50,7 +55,7 @@ public class MeleeEnemy : MonoBehaviour
         //  && collision.collider == enemyCollider
         if (collision.collider.CompareTag("Player"))
         {
-            Debug.Log("Player collided with melee enemy!");
+            this.GetComponent<Animator>().Play("MeleeAttack");
             DamagePlayer(collision.gameObject);
         }
     }
