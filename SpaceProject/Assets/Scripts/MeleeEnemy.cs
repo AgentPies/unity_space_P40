@@ -47,8 +47,10 @@ public class MeleeEnemy : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.CompareTag("Player") && collision.collider == enemyCollider)
+        //  && collision.collider == enemyCollider
+        if (collision.collider.CompareTag("Player"))
         {
+            Debug.Log("Player collided with melee enemy!");
             DamagePlayer(collision.gameObject);
         }
     }
