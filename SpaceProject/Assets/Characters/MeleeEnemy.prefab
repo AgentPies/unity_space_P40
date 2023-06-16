@@ -1074,6 +1074,7 @@ Transform:
   - {fileID: 51315190274130740}
   - {fileID: 51496351091877750}
   - {fileID: 51719999853710298}
+  - {fileID: 456039816401474313}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1139,8 +1140,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3fbbdd68fc368c408916b91818232c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  currentRoom: 
+  moveSpeed: 3
+  detectionRange: 10
+  target: {fileID: 0}
+  currentRoom: {fileID: 0}
+  enemyCollider: {fileID: 8001869875145886548}
 --- !u!114 &-6551329823019580497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3923,6 +3927,52 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0023963451, y: 0.84321845, z: 0.0056211054}
     m_Extent: {x: 1.0236003, y: 0.94530535, z: 0.2692978}
   m_DirtyAABB: 0
+--- !u!1 &4272682475398729079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 456039816401474313}
+  - component: {fileID: 8001869875145886548}
+  m_Layer: 0
+  m_Name: DamageCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &456039816401474313
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4272682475398729079}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.6016831, z: -0.42}
+  m_LocalScale: {x: 0.32011905, y: 0.32011905, z: 0.32011905}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 51389146412712068}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &8001869875145886548
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4272682475398729079}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2.0536983
+  m_Height: 6.1835303
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.88329947, z: 1.2462178}
 --- !u!1001 &215627137375066540
 PrefabInstance:
   m_ObjectHideFlags: 0

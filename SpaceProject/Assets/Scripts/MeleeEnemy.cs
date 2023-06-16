@@ -1,46 +1,80 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class MeleeEnemyAI : MonoBehaviour
+public class MeleeEnemy : MonoBehaviour
 {
     public float moveSpeed = 3f;
     public float detectionRange = 10f;
-    public Transform target;
-    public Collider roomCollider;
+    public GameObject currentRoom;
+    public Collider enemyCollider; // Collider representing the enemy
 
-    private bool isInRoom;
+    private GameObject player;
+    private Rigidbody rb;
+    private bool isPlayerInRoom;
 
     private void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player").transform;
-        isInRoom = false;
+        rb = GetComponent<Rigidbody>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        isPlayerInRoom = false;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        // Check if the target is within detection range and in the same room
-        if (Vector3.Distance(transform.position, target.position) <= detectionRange && isInRoom)
+        DetectPlayer();
+
+        if (isPlayerInRoom)
         {
-            this.GetComponent<Animator>().SetBool("isWalking", true);
-            // Move towards the target
-            transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+            Vector3 direction = player.transform.position - transform.position;
+            Quaternion rotation = Quaternion.LookRotation(direction, Vector3.up);
+            rb.MoveRotation(rotation);
+            rb.MovePosition(rb.position + direction.normalized * moveSpeed * Time.fixedDeltaTime);
+        }
+    }
+
+    private void DetectPlayer()
+    {
+        if (player.GetComponent<PlayerMovement>().GetCurrentRoom() == currentRoom)
+        {
+            isPlayerInRoom = true;
+        }
+        else
+        {
+            isPlayerInRoom = false;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("Player") && collision.collider == enemyCollider)
+        {
+            DamagePlayer(collision.gameObject);
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        // Check if the enemy enters a room
-        if (other == roomCollider)
+        if (other.CompareTag("Room"))
         {
-            isInRoom = true;
+            currentRoom = other.gameObject;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        // Check if the enemy exits a room
-        if (other == roomCollider)
+        if (other.CompareTag("Room"))
         {
-            isInRoom = false;
+            currentRoom = null;
+        }
+    }
+
+    private void DamagePlayer(GameObject player)
+    {
+        if (player.CompareTag("Player"))
+        {
+            player.GetComponent<HealthSystem>().TakeDamage(20);
+            Debug.Log("Player damaged by melee enemy!");
         }
     }
 }
