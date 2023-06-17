@@ -707,6 +707,7 @@ MonoBehaviour:
   - {fileID: 577361478346479465, guid: 788146255de7a52439416f91096e7f82, type: 3}
   canvas: {fileID: 838451791}
   roomsInColumn: 4
+  lastRoom: {fileID: 6645618899036752878, guid: 2885823b23306e849bef0987429ce9f0, type: 3}
   roomsInRow: 4
 --- !u!4 &838451791
 Transform:

@@ -4865,7 +4865,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6887984355487596118, guid: 849a0087892c8534fa5fce315034eed8, type: 3}
       propertyPath: m_Name
-      value: Room TDLR TELEPORT
+      value: Room TDLR TELEPORT Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 849a0087892c8534fa5fce315034eed8, type: 3}
@@ -5092,6 +5092,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Pod_Pad_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1150648504801014, guid: 0cc6e50db7e29c74e9c377075d0c6140, type: 3}
+      propertyPath: m_TagString
+      value: Portal
+      objectReference: {fileID: 0}
     - target: {fileID: 4098823409656862, guid: 0cc6e50db7e29c74e9c377075d0c6140, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -5150,3 +5154,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cc6e50db7e29c74e9c377075d0c6140, type: 3}
+--- !u!1 &3405324294643456836 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1150648504801014, guid: 0cc6e50db7e29c74e9c377075d0c6140, type: 3}
+  m_PrefabInstance: {fileID: 3406466128964799922}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &843388404930081152
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3405324294643456836}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 22.191208, y: 21.38038, z: 22.191221}
+  m_Center: {x: 0, y: 9.347076, z: -0.000007813871}

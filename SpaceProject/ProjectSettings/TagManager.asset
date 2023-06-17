@@ -11,6 +11,8 @@ TagManager:
   - Wall
   - Door
   - PlayerGun
+  - Portal
+  - MeleeDamage
   layers:
   - Default
   - TransparentFX

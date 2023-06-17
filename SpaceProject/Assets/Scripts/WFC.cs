@@ -8,6 +8,7 @@ public class WFC : MonoBehaviour
     [SerializeField] public GameObject[] rooms;
     [SerializeField] Transform  canvas;
     [SerializeField] public int roomsInColumn;
+    [SerializeField] public GameObject lastRoom;
        
     [SerializeField] public int roomsInRow;
     // Start is called before the first frame update
@@ -86,16 +87,11 @@ public class WFC : MonoBehaviour
                             break;
                         }
                         else if (currentRow == roomsInColumn){
-                            foreach (GameObject room1 in rooms){
-                                if ((room1.GetComponent<WFCoptions>().top == false)&(room1.GetComponent<WFCoptions>().right == false)){
-                                    room = room1;
-                                    instantiatedRooms[currentRoom] = Instantiate(room, new Vector3(x, 0, z), Quaternion.identity * room.transform.localRotation, parent: canvas);
-                                    currentRoom++;
-                                    break;
-                                }
-                            }
-                            break;
-                        }                        
+                                room = lastRoom;
+                                instantiatedRooms[currentRoom] = Instantiate(room, new Vector3(x, 0, z), Quaternion.identity * room.transform.localRotation, parent: canvas);
+                                currentRoom++;
+                                break;
+                            }                        
                         else if ((room.GetComponent<WFCoptions>().right == false) & 
                         (instantiatedRooms[currentRoom - 1].GetComponent<WFCoptions>().top == room.GetComponent<WFCoptions>().bottom) &
                         (instantiatedRooms[currentRoom - roomsInColumn].GetComponent<WFCoptions>().right == room.GetComponent<WFCoptions>().left))

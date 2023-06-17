@@ -3943,7 +3943,7 @@ GameObject:
   - component: {fileID: 6083394790309399941}
   m_Layer: 0
   m_Name: DamageCollider
-  m_TagString: Untagged
+  m_TagString: MeleeDamage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
