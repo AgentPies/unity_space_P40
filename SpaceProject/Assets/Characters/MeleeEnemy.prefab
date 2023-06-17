@@ -1055,7 +1055,7 @@ Transform:
   m_GameObject: {fileID: 53057004222373560}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.208657, y: 0, z: 3.6722755}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalScale: {x: 2.9867465, y: 2.9867465, z: 2.9867465}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 47644024464015146}
@@ -1159,7 +1159,6 @@ MonoBehaviour:
   ranged: 0
   melee: 1
   turret: 0
-  deathParticle: {fileID: 0}
   maxHealth: 10
   currentHealth: 0
 --- !u!1 &53096790659352562
@@ -3940,7 +3939,6 @@ GameObject:
   m_Component:
   - component: {fileID: 456039816401474313}
   - component: {fileID: 8001869875145886548}
-  - component: {fileID: 6083394790309399941}
   m_Layer: 0
   m_Name: DamageCollider
   m_TagString: Untagged
@@ -3956,7 +3954,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4272682475398729079}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.689, z: -0.42}
+  m_LocalPosition: {x: -0, y: 0.6016831, z: -0.42}
   m_LocalScale: {x: 0.32011905, y: 0.32011905, z: 0.32011905}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3977,18 +3975,6 @@ CapsuleCollider:
   m_Height: 6.1835303
   m_Direction: 1
   m_Center: {x: 0, y: 0.88329947, z: 1.2462178}
---- !u!114 &6083394790309399941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4272682475398729079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc9777bba63d20b4f8f781ada5c1593c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &215627137375066540
 PrefabInstance:
   m_ObjectHideFlags: 0
