@@ -30,11 +30,19 @@ public class MeleeEnemy : MonoBehaviour
             Quaternion rotation = Quaternion.LookRotation(direction, Vector3.up);
             rb.MoveRotation(rotation);
             rb.MovePosition(rb.position + direction.normalized * moveSpeed * Time.fixedDeltaTime);
-            this.GetComponent<Animator>().SetBool("isWalking", true);
+            // this.GetComponent<Animator>().SetBool("isWalking", true);
+            // this.GetComponent<Animator>().Play("SwordRun");
+            // AnimationClip[] clips = this.GetComponent<Animator>().runtimeAnimatorController.animationClips;
+            // Debug.Log(this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("SwordRun"));
+            if(this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("SwordRun") == false)
+            {
+                this.GetComponent<Animator>().Play("SwordRun");
+            }
+
         }
         else
         {
-            this.GetComponent<Animator>().SetBool("isWalking", false);
+
         }
     }
 
@@ -46,17 +54,8 @@ public class MeleeEnemy : MonoBehaviour
         }
         else
         {
+            this.GetComponent<Animator>().Play("Idle");
             isPlayerInRoom = false;
-        }
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        //  && collision.collider == enemyCollider
-        if (collision.collider.CompareTag("Player"))
-        {
-            this.GetComponent<Animator>().Play("MeleeAttack");
-            DamagePlayer(collision.gameObject);
         }
     }
 
@@ -73,15 +72,6 @@ public class MeleeEnemy : MonoBehaviour
         if (other.CompareTag("Room"))
         {
             currentRoom = null;
-        }
-    }
-
-    private void DamagePlayer(GameObject player)
-    {
-        if (player.CompareTag("Player"))
-        {
-            player.GetComponent<HealthSystem>().TakeDamage(20);
-            Debug.Log("Player damaged by melee enemy!");
         }
     }
 }
