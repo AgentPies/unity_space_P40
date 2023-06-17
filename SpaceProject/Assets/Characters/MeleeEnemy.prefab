@@ -1055,7 +1055,7 @@ Transform:
   m_GameObject: {fileID: 53057004222373560}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.208657, y: 0, z: 3.6722755}
-  m_LocalScale: {x: 2.9867465, y: 2.9867465, z: 2.9867465}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 47644024464015146}
@@ -1159,6 +1159,7 @@ MonoBehaviour:
   ranged: 0
   melee: 1
   turret: 0
+  deathParticle: {fileID: 0}
   maxHealth: 10
   currentHealth: 0
 --- !u!1 &53096790659352562
