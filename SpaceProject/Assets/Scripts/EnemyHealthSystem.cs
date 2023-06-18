@@ -9,6 +9,8 @@ public class EnemyHealthSystem : MonoBehaviour
     [SerializeField] public bool ranged = false;
     [SerializeField] public bool melee = false;
     [SerializeField] public bool turret = false;
+    public bool isAlive = true;
+
     [SerializeField] public ParticleSystem deathParticle;
     public int maxHealth = 10;
     public int currentHealth;
@@ -33,6 +35,7 @@ public class EnemyHealthSystem : MonoBehaviour
 
     public void EnemyDie()
     {   
+        this.isAlive = false;
         this.GetComponent<Collider>().enabled = false;    
         if (melee)
         { 

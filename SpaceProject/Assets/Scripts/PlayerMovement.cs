@@ -56,13 +56,27 @@ public class PlayerMovement : MonoBehaviour
         {
             currentRoom = other.gameObject; // Assign the name of the entered room as the current room identifier
         }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Room"))
+        else if (other.CompareTag("Portal"))
         {
-            currentRoom = null; // Reset the current room identifier when exiting the room
+            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        else if (other.CompareTag("MeleeDamage"))
+        {
+            if (other.transform.parent.gameObject.GetComponent<EnemyHealthSystem>().isAlive)
+            {
+                Debug.Log("Melee enemy collided with player!");
+                Debug.Log(other.transform.parent.gameObject.name);
+                other.transform.parent.gameObject.GetComponent<Animator>().Play("MeleeAttack");
+                this.GetComponent<HealthSystem>().TakeDamage(20);
+            }
         }
     }
+    
+    // private void OnTriggerExit(Collider other)
+    // {
+    //     if (other.CompareTag("Room"))
+    //     {
+    //         currentRoom = null; // Reset the current room identifier when exiting the room
+    //     }
+    // }
 }

@@ -12,6 +12,7 @@ public class MeleeEnemy : MonoBehaviour
     private GameObject player;
     private Rigidbody rb;
     private bool isPlayerInRoom;
+    
 
     private void Start()
     {
@@ -30,11 +31,11 @@ public class MeleeEnemy : MonoBehaviour
             Quaternion rotation = Quaternion.LookRotation(direction, Vector3.up);
             rb.MoveRotation(rotation);
             rb.MovePosition(rb.position + direction.normalized * moveSpeed * Time.fixedDeltaTime);
-            this.GetComponent<Animator>().SetBool("isWalking", true);
-        }
-        else
-        {
-            this.GetComponent<Animator>().SetBool("isWalking", false);
+            if(this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("SwordRun") == false)
+            {
+                this.GetComponent<Animator>().Play("SwordRun");
+            }
+
         }
     }
 

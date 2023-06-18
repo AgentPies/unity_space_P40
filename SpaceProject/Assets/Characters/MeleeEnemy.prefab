@@ -1039,6 +1039,7 @@ GameObject:
   - component: {fileID: 52328976529593017}
   - component: {fileID: 52328976529593020}
   - component: {fileID: -6551329823019580497}
+  - component: {fileID: 1098132496268631190}
   m_Layer: 8
   m_Name: MeleeEnemy
   m_TagString: Enemy
@@ -1159,8 +1160,24 @@ MonoBehaviour:
   ranged: 0
   melee: 1
   turret: 0
+  isAlive: 1
+  deathParticle: {fileID: 0}
   maxHealth: 10
   currentHealth: 0
+--- !u!136 &1098132496268631190
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53057004222373560}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &53096790659352562
 GameObject:
   m_ObjectHideFlags: 0
@@ -3941,7 +3958,7 @@ GameObject:
   - component: {fileID: 8001869875145886548}
   m_Layer: 0
   m_Name: DamageCollider
-  m_TagString: Untagged
+  m_TagString: MeleeDamage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

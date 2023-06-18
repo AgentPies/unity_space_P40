@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 269967744bbed1849a317b8175dc3f43, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.17286868, g: 0.21603008, b: 0.2979867, a: 1}
+  m_IndirectSpecularColor: {r: 0.029688492, g: 0.043067064, b: 0.032229997, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -229,31 +229,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7001081849504908033, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.51
+      value: -23.699635
       objectReference: {fileID: 0}
     - target: {fileID: 7001081849504908033, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.7886169
       objectReference: {fileID: 0}
     - target: {fileID: 7001081849504908033, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 24.107344
+      value: 24.098907
       objectReference: {fileID: 0}
     - target: {fileID: 7001081849504908033, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 0.8833952
       objectReference: {fileID: 0}
     - target: {fileID: 7001081849504908033, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0.000000015832484
       objectReference: {fileID: 0}
     - target: {fileID: 7001081849504908033, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: -0.46862888
       objectReference: {fileID: 0}
     - target: {fileID: 7001081849504908033, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.000000007450581
       objectReference: {fileID: 0}
     - target: {fileID: 7001081849504908033, guid: f6f344fd5ccae1d43b5d77a991b86518, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -707,6 +707,7 @@ MonoBehaviour:
   - {fileID: 577361478346479465, guid: 788146255de7a52439416f91096e7f82, type: 3}
   canvas: {fileID: 838451791}
   roomsInColumn: 4
+  lastRoom: {fileID: 4735768313672948333, guid: 2ab5562cd304adc49bf48e006aebceeb, type: 3}
   roomsInRow: 4
 --- !u!4 &838451791
 Transform:
