@@ -578,8 +578,9 @@ MonoBehaviour:
   ranged: 0
   melee: 0
   turret: 1
+  isAlive: 1
   deathParticle: {fileID: 8871420763479914357}
-  maxHealth: 10
+  maxHealth: 20
   currentHealth: 0
 --- !u!1 &8190478839031156865
 GameObject:

@@ -1141,7 +1141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3fbbdd68fc368c408916b91818232c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 10
   detectionRange: 10
   currentRoom: {fileID: 0}
   enemyCollider: {fileID: 8001869875145886548}

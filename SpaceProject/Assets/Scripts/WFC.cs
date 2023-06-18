@@ -71,7 +71,18 @@ public class WFC : MonoBehaviour
                     }
                     // pierwszy wiersz
                     else if (currentRow == 0){
-                         if ((instantiatedRooms[currentRoom - roomsInColumn].GetComponent<WFCoptions>().right == room.GetComponent<WFCoptions>().left)
+                        if (currentColumn == roomsInRow){
+                            foreach (GameObject room1 in rooms){
+                                if ((room1.GetComponent<WFCoptions>().right == false)&(room1.GetComponent<WFCoptions>().bottom == false)){
+                                    room = room1;
+                                    instantiatedRooms[currentRoom] = Instantiate(room, new Vector3(x, 0, z), Quaternion.identity * room.transform.localRotation, parent: canvas);
+                                    currentRoom++;
+                                    break;
+                                }
+                            }
+                        break;
+                        }
+                         else if ((instantiatedRooms[currentRoom - roomsInColumn].GetComponent<WFCoptions>().right == room.GetComponent<WFCoptions>().left)
                          & (room.GetComponent<WFCoptions>().bottom == false))
                          {
                             instantiatedRooms[currentRoom] = Instantiate(room, new Vector3(x, 0, z), Quaternion.identity * room.transform.localRotation, parent: canvas);
@@ -86,18 +97,7 @@ public class WFC : MonoBehaviour
                     }
                     // ostatnia kolumna
                     else if (currentColumn == roomsInRow){
-                        if (currentRow == 0){
-                            foreach (GameObject room1 in rooms){
-                                if ((room1.GetComponent<WFCoptions>().right == false)&(room1.GetComponent<WFCoptions>().bottom == false)){
-                                    room = room1;
-                                    instantiatedRooms[currentRoom] = Instantiate(room, new Vector3(x, 0, z), Quaternion.identity * room.transform.localRotation, parent: canvas);
-                                    currentRoom++;
-                                    break;
-                                }
-                            }
-                            break;
-                        }
-                        else if (currentRow == roomsInColumn){
+                        if (currentRow == roomsInColumn){
                                 room = lastRoom;
                                 instantiatedRooms[currentRoom] = Instantiate(room, new Vector3(x, 0, z), Quaternion.identity * room.transform.localRotation, parent: canvas);
                                 currentRoom++;

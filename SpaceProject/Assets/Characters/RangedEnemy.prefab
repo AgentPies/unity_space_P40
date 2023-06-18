@@ -786,9 +786,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b6693c638a6e344bcc85eb5be1c176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 6
   fireRate: 3
-  bulletSpeed: 15
+  bulletSpeed: 20
   bulletPrefab: {fileID: 4689329602990431647, guid: 7b89b579b80018b40bd07923f11678dc, type: 3}
   firePoint: {fileID: 1720502948158086597}
   currentRoom: {fileID: 0}
@@ -807,6 +807,8 @@ MonoBehaviour:
   ranged: 1
   melee: 0
   turret: 0
+  isAlive: 1
+  deathParticle: {fileID: 0}
   maxHealth: 10
   currentHealth: 0
 --- !u!1 &7656605336695756647
