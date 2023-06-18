@@ -12,6 +12,7 @@ public class MeleeEnemy : MonoBehaviour
     private GameObject player;
     private Rigidbody rb;
     private bool isPlayerInRoom;
+    
 
     private void Start()
     {

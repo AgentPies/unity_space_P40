@@ -62,18 +62,21 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (other.CompareTag("MeleeDamage"))
         {
-            Debug.Log("Melee enemy collided with player!");
-            Debug.Log(other.transform.parent.gameObject.name);
-            other.transform.parent.gameObject.GetComponent<Animator>().Play("MeleeAttack");
-            this.GetComponent<HealthSystem>().TakeDamage(20);
+            if (other.transform.parent.gameObject.GetComponent<EnemyHealthSystem>().isAlive)
+            {
+                Debug.Log("Melee enemy collided with player!");
+                Debug.Log(other.transform.parent.gameObject.name);
+                other.transform.parent.gameObject.GetComponent<Animator>().Play("MeleeAttack");
+                this.GetComponent<HealthSystem>().TakeDamage(20);
+            }
         }
     }
     
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Room"))
-        {
-            currentRoom = null; // Reset the current room identifier when exiting the room
-        }
-    }
+    // private void OnTriggerExit(Collider other)
+    // {
+    //     if (other.CompareTag("Room"))
+    //     {
+    //         currentRoom = null; // Reset the current room identifier when exiting the room
+    //     }
+    // }
 }

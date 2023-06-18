@@ -7,17 +7,28 @@ public class WFC : MonoBehaviour
 {
     [SerializeField] public GameObject[] rooms;
     [SerializeField] Transform  canvas;
-    [SerializeField] public int roomsInColumn;
+    
     [SerializeField] public GameObject lastRoom;
+    public static int roomsInColumn;
        
-    [SerializeField] public int roomsInRow;
+    public static int roomsInRow;
     // Start is called before the first frame update
     void Start()
     {         
         int currentRoom = 0;
-        
+        if (roomsInColumn <= 0){
+            Debug.Log(roomsInColumn);
+            roomsInColumn = 3;
+        }
+        if (roomsInRow <= 0){
+            Debug.Log(roomsInRow);
+            roomsInRow = 3;
+        }
+
         roomsInColumn = roomsInColumn-1;
         roomsInRow = roomsInRow-1;
+        Debug.Log(roomsInColumn);
+        Debug.Log(roomsInRow);
 
         GameObject[] instantiatedRooms = new GameObject[100];
         float x = 0;
