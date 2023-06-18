@@ -54,6 +54,10 @@ public class ArenaScript : MonoBehaviour
                 enemy.GetComponent<Transform>().localScale = new Vector3(4,4,4);
                 Invoke("ArenaDoorClose", 1f);
             }
+            else if (round == 4)
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene("StartMenu");
+            }
         }
 
     }
