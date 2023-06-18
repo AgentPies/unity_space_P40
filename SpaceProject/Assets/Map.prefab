@@ -421,7 +421,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4010720186516744351}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &4010720186467508945
 SkinnedMeshRenderer:
@@ -679,7 +679,6 @@ Transform:
   - {fileID: 4010720188087114492}
   - {fileID: 4010720187728592715}
   - {fileID: 4010720188248918355}
-  - {fileID: 4010720186832518137}
   - {fileID: 4010720188441189746}
   - {fileID: 4010720188328864570}
   - {fileID: 4010720187349529406}
@@ -2623,141 +2622,6 @@ Transform:
   m_Father: {fileID: 4010720187241274194}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4010720186832518136
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4010720186832518137}
-  - component: {fileID: 4010720186832518142}
-  m_Layer: 0
-  m_Name: SM_Chr_ScifiWorlds_SpaceSuit_Alien_Female_01
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4010720186832518137
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4010720186832518136}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4010720186516744351}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!137 &4010720186832518142
-SkinnedMeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4010720186832518136}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 3
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 04e71246c75bcad4bb526ab1430652ce, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  serializedVersion: 2
-  m_Quality: 0
-  m_UpdateWhenOffscreen: 0
-  m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300022, guid: e274402e4c839934c817fc0664347c81, type: 3}
-  m_Bones:
-  - {fileID: 4010720187709642877}
-  - {fileID: 4010720187241274194}
-  - {fileID: 4010720186919139889}
-  - {fileID: 4010720187152181176}
-  - {fileID: 4010720187321336592}
-  - {fileID: 4010720187878171600}
-  - {fileID: 4010720187975263219}
-  - {fileID: 4010720186923202805}
-  - {fileID: 4010720187640382812}
-  - {fileID: 4010720187576784771}
-  - {fileID: 4010720187853408424}
-  - {fileID: 4010720188054866963}
-  - {fileID: 4010720188179927505}
-  - {fileID: 4010720188052817802}
-  - {fileID: 4010720186923315275}
-  - {fileID: 4010720186896992678}
-  - {fileID: 4010720186734550150}
-  - {fileID: 4010720187177264444}
-  - {fileID: 4010720187366598532}
-  - {fileID: 4010720186489991445}
-  - {fileID: 4010720187629406586}
-  - {fileID: 4010720186643330383}
-  - {fileID: 4010720186749095362}
-  - {fileID: 4010720186832628033}
-  - {fileID: 4010720188450906442}
-  - {fileID: 4010720188046711240}
-  - {fileID: 4010720186455741068}
-  - {fileID: 4010720187346412820}
-  - {fileID: 4010720187231447910}
-  - {fileID: 4010720186644619709}
-  - {fileID: 4010720188387735275}
-  - {fileID: 4010720186425346367}
-  - {fileID: 4010720186466999026}
-  - {fileID: 4010720187417067649}
-  - {fileID: 4010720188386127661}
-  - {fileID: 4010720187596120631}
-  - {fileID: 4010720187069436573}
-  - {fileID: 4010720188273502511}
-  - {fileID: 4010720187321936585}
-  - {fileID: 4010720187472609278}
-  - {fileID: 4010720186831611766}
-  - {fileID: 4010720187537900513}
-  - {fileID: 4010720187043348272}
-  - {fileID: 4010720188114143086}
-  - {fileID: 4010720187515732470}
-  - {fileID: 4010720188265486673}
-  - {fileID: 4010720187378655129}
-  - {fileID: 4010720188218802623}
-  - {fileID: 4010720187312467326}
-  - {fileID: 4010720187005519477}
-  m_BlendShapeWeights: []
-  m_RootBone: {fileID: 4010720187709642877}
-  m_AABB:
-    m_Center: {x: 0.00000011920929, y: 0.9513681, z: -0.09539495}
-    m_Extent: {x: 1.0297389, y: 1.0207753, z: 0.28159568}
-  m_DirtyAABB: 0
 --- !u!1 &4010720186832628032
 GameObject:
   m_ObjectHideFlags: 0
@@ -5166,7 +5030,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4010720186516744351}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &4010720187349529407
 SkinnedMeshRenderer:
@@ -6706,7 +6570,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4010720186516744351}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &4010720187645312975
 SkinnedMeshRenderer:
@@ -9781,7 +9645,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4010720186516744351}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &4010720188263107660
 SkinnedMeshRenderer:
@@ -10498,7 +10362,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4010720186516744351}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &4010720188328864571
 SkinnedMeshRenderer:
@@ -11244,7 +11108,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4010720186516744351}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &4010720188441189747
 SkinnedMeshRenderer:

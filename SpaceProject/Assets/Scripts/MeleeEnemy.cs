@@ -30,18 +30,10 @@ public class MeleeEnemy : MonoBehaviour
             Quaternion rotation = Quaternion.LookRotation(direction, Vector3.up);
             rb.MoveRotation(rotation);
             rb.MovePosition(rb.position + direction.normalized * moveSpeed * Time.fixedDeltaTime);
-            // this.GetComponent<Animator>().SetBool("isWalking", true);
-            // this.GetComponent<Animator>().Play("SwordRun");
-            // AnimationClip[] clips = this.GetComponent<Animator>().runtimeAnimatorController.animationClips;
-            // Debug.Log(this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("SwordRun"));
             if(this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("SwordRun") == false)
             {
                 this.GetComponent<Animator>().Play("SwordRun");
             }
-
-        }
-        else
-        {
 
         }
     }
